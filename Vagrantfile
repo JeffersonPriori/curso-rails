@@ -2,7 +2,7 @@
 # vi: set ft=ruby :
 Vagrant.configure("2") do |config|
   config.vm.provider "virtualbox"
-  config.vm.box = "JeffersonPriori/curso-rails"
+  config.vm.box = "jacksonpires/curso-rails"
   config.vm.box_version = "1.0.0"
  
   config.vm.network :forwarded_port, guest: 3000, host: 3000 # rails
